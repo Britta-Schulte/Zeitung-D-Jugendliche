@@ -25,7 +25,7 @@ newTrial("Info",
         .print()
     ,
   
-    newButton("Weiter_Alter","Ich bin über 18 Jahre. Weiter zur Aufklärug über Rechte und Wiederruf")
+    newButton("Weiter_Alter","Ich bin unter 18. Weiter zur Aufklärug über Rechte und Wiederruf")
         .center()
         .print()
     ,
@@ -165,7 +165,7 @@ newTrial("Code",
         .wait()
         .settings.log("final")
 ,
-    newText("Danke","Vielen Dank! Als nächstes folgt eine Einwilligungserklärung. Klicken Sie bitte auf den Button.<b></p>")
+    newText("Danke","Vielen Dank! Als nächstes folgt eine Einwilligungserklärung. Klick bitte auf den Button.<b></p>")
         .center()
         .print()
 ,
@@ -208,7 +208,7 @@ newTrial("Code",
         .center()
         .print()
     ,
-    newText("Test", "<font color=#DF0101> Probieren Sie dies hier einmal aus und geben Sie einen beliebigen Text ein. Bestätigen Sie die Eingabe mit <strong>Enter</strong>. Danach können Sie das Experiment starten.</font>")
+    newText("Test", "<font color=#DF0101> Probier das Schreiben im Textfeld einmal aus und gib einen beliebigen Text ein. Bestätige die Eingabe mit <strong>Enter</strong>. Danach startet das Experiment.</font>")
         .center()
         .print()
     ,
@@ -225,7 +225,7 @@ newTrial("Code",
         .wait()
     ,
     
-    newText("Weiter","<p><br>Klicken Sie nun bitte auf den Button, um das Experiment zu beginnen.")
+    newText("Weiter","<p><br>Klick nun bitte auf den Button, um das Experiment zu starten.")
         .center()
         .print()
     ,
@@ -281,11 +281,11 @@ newTrial("Meta1",
         .center()
         .print()
  ,
-    newText("Meta-1", "<p>Vielen Dank für die Teilnahme!<br></p>Nun ben&ouml;tigen wir noch biographische Informationen. Bitte beantworten Sie die Fragen in den Textfeldern und best&auml;tigen wie gehabt mit <b>Enter</b>. Falls Sie mehr Platz ben&ouml;tigen sollten, k&ouml;nnen Sie das Textfeld an seiner rechten unteren Ecke anklicken, gedr&uuml;ckt halten und gr&ouml;ßer ziehen.")
+    newText("Meta-1", "<p>Vielen Dank für die Teilnahme!<br></p>Nun ben&ouml;tigen wir noch biographische Informationen. Bitte beantworte die Fragen in den Textfeldern und best&auml;tigen wie gehabt mit <b>Enter</b>. Falls du mehr Platz ben&ouml;tigen solltest, einfach das Textfeld an seiner rechten unteren Ecke angeklicken, gedr&uuml;ckt halten und gr&ouml;ßer ziehen.")
         .center()
         .print()
 ,
-    newText("Kommentare","<br><b>Ist Ihnen etwas aufgefallen oder haben Sie Kommentare?</b></p>")
+    newText("Kommentare","<br><b>Ist dir etwas aufgefallen oder hast du Kommentare?</b></p>")
         .center()
         .print()
 ,
@@ -295,7 +295,7 @@ newTrial("Meta1",
 ,
     getTextInput("weitereKommentare").settings.log("final")
 ,
-    newText("Geburtsjahr","<p>In welchem Jahr sind Sie geboren?")
+    newText("Geburtsjahr","<p>In welchem Jahr bist du geboren?")
         .center()
         .print()
 ,
@@ -340,7 +340,7 @@ newTrial("Meta1",
     getTextInput("Geburtsort")
         .settings.log("final")
 ,
-    newText("Aufgewachsen","<p>Wo sind Sie aufgewachsen?")
+    newText("Aufgewachsen","<p>Wo bist du aufgewachsen?")
         .center()
         .print()
 ,
@@ -370,22 +370,22 @@ newTrial("Meta1",
     getTextInput("Wohnort")
         .settings.log("final")
 ,       
-newText("Bildungsabschluss","<p>Was ist Ihr höchster Bildungsabschluss")
-        .center()
-        .print()
-,
-    newCanvas("Bildungsabschluss", 1, 10)
-        .center()
-        .print()
-,
-    newTextInput("Bildungsabschluss")
-        .center()
-        .print()
-,
-    getTextInput("Bildungsabschluss")
-        .settings.log("final")
-,
-     newText("Studium","Falls Sie studieren: Welches Fach?")
+//  newText("Bildungsabschluss","<p>Was ist Ihr höchster Bildungsabschluss")
+//        .center()
+//        .print()
+//,
+//    newCanvas("Bildungsabschluss", 1, 10)
+//        .center()
+//        .print()
+//,
+//    newTextInput("Bildungsabschluss")
+//        .center()
+//        .print()
+//,
+//    getTextInput("Bildungsabschluss")
+ //       .settings.log("final")
+//,
+     newText("Studium","Was für eine Art von Schule besuchst du?")
         .center()
         .print()
 ,
@@ -400,25 +400,25 @@ newText("Bildungsabschluss","<p>Was ist Ihr höchster Bildungsabschluss")
     getTextInput("Studium")
         .settings.log("final")
 ,
- newText("Semester","In welchem Fachsemester sind Sie?")
-        .center()
-        .print()
-,
-    newCanvas("Semester", 1, 10)
-        .center()
-        .print()
-,
-    newTextInput("Semester")
-        .center()
-        .print()
-,
-    getTextInput("Semester")
-        .settings.log("final")
-,
+// newText("Semester","In welche Fachsemester sind Sie?")
+ //       .center()
+ //       .print()
+//,
+//    newCanvas("Semester", 1, 10)
+//        .center()
+//        .print()
+//,
+ //   newTextInput("Semester")
+//        .center()
+ //       .print()
+//,
+//    getTextInput("Semester")
+//        .settings.log("final")
+//,
     newButton("weiter","Weiter")
-        .center()
-        .print()
-    ,
+       .center()        
+       .print()
+   ,
     newText("Leerzeile"," <br></p>")
         .print()
     ,
@@ -441,7 +441,7 @@ newTrial("Meta2",
         .center()
         .print()
  ,
-    newText("SprachenMutter","<p>Welche Sprachen spricht/sprach Ihre Mutter? Bitte sortieren und mit der am besten gesprochenen Sprache beginnen.")
+    newText("SprachenMutter","<p>Welche Sprachen spricht/sprach deine Mutter? Bitte sortieren und mit der am besten gesprochenen Sprache beginnen.")
         .center()
         .print()
 ,
@@ -456,7 +456,7 @@ newTrial("Meta2",
     getTextInput("SprachenMutter")
         .settings.log("final")
 ,
-    newText("SprachenVater","<p>Welche Sprachen spricht/sprach Ihr Vater? Bitte sortieren und mit der am besten gesprochenen Sprache beginnen.")
+    newText("SprachenVater","<p>Welche Sprachen spricht/sprach dein Vater? Bitte sortieren und mit der am besten gesprochenen Sprache beginnen.")
         .center()
         .print()
 ,
@@ -471,7 +471,7 @@ newTrial("Meta2",
     getTextInput("SprachenVater")
         .settings.log("final")
 ,
-    newText("SprachenSelbst","<p>Welche Sprachen sprechen Sie selbst im Alltag? Mit wem und in welchen Situationen? Bitte sortieren und mit der am häufigsten gesprochenen Sprache beginnen.")
+    newText("SprachenSelbst","<p>Welche Sprachen sprichst du selbst im Alltag? Mit wem und in welchen Situationen? Bitte sortieren und mit der am häufigsten gesprochenen Sprache beginnen.")
         .center()
         .print()
 ,
@@ -487,7 +487,7 @@ newTrial("Meta2",
         .settings.log("final")
        
 ,
- newText("Dialekt","Sprechen Sie einen Dialekt? Mit wem und in welchen Situationen?")
+ newText("Dialekt","Sprichst du einen Dialekt? Mit wem und in welchen Situationen?")
         .center()
         .print()
 ,
@@ -502,17 +502,17 @@ newTrial("Meta2",
     getTextInput("Dialekt")
         .settings.log("final")
 ,        
-    newText("Danke","<p>Vielen Dank f&uuml;r Ihre Teilnahme! Dürfen wir Sie in Zukunft erneut kontaktieren? Wenn ja, geben Sie bitte ihre E-Mailadresse in das Textfeld ein. Wenn nein, lassen Sie das Textfeld bitte einfach frei. <br><p>Die Angabe der Kontaktdaten ist freiwillig. Um Anonymität zu gewährleisten, wird diese Angabe getrennt vom ausgefüllten Fragebogen archiviert.")
+    newText("Danke","<p>Vielen Dank f&uuml;r deine Teilnahme!")
         .center()
         .print()
 ,
-    newTextInput("Kontaktinfo")
-        .center()
-        .print()
-,
-    getTextInput("Kontaktinfo")
-        .settings.log("final")
-,
+//    newTextInput("Kontaktinfo")
+//        .center()
+//        .print()
+//,
+//    getTextInput("Kontaktinfo")
+//        .settings.log("final")
+//,
     newText("Leerzeile","<br>")
         .print()
 ,
