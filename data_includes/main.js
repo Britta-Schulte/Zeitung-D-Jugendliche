@@ -246,13 +246,13 @@ Template(
         newImage("Header","BHeader.png").center().print()
         ,
         newCanvas("Top_nebeneinander","auto","auto")
-            .add(420,40, newTextInput("Top_Korrektur").size(200,140) )
+            .add(620,40, newTextInput("Top_Korrektur").size(200,140) )
             .center().print()
         ,
         newImage("TopImage",row.TopImage).print( getCanvas("Top_nebeneinander") )
         ,
         newCanvas("Bottom_nebeneinander","auto","auto")
-            .add(420,40, newTextInput("Bottom_Korrektur").size(200,140) )
+            .add(620,40, newTextInput("Bottom_Korrektur").size(200,140) )
             .center().print()
         ,
         newImage("BottomImage",row.BottomImage).print( getCanvas("Bottom_nebeneinander") )
@@ -419,6 +419,9 @@ newTrial("Meta1",
        .center()        
        .print()
    ,
+    newText("Leerzeile"," <br></p>")
+        .print()
+    ,
     newText("Leerzeile"," <br></p>")
         .print()
     ,
