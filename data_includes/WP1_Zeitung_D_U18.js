@@ -104,7 +104,7 @@ newTrial("Code",
     getTextInput("Texteingabe-Code")
             .log("final")
 ,
-//    newText("Danke","Vielen Dank! Als nächstes folgt eine Einwilligungserklärung. Klicken Sie bitte auf den Button.<b></p>")
+//    newText("Danke","Vielen Dank! Als nächstes folgt eine Anleitung. Klicken Sie bitte auf den Button.<b></p>")
 //        .center()
 //        .print()
 //,
@@ -113,7 +113,7 @@ newTrial("Code",
         .print()
         .wait(
             getTextInput("Texteingabe-Code").test.text( /[a-zA-Z]+[0-9]+[a-zA-Z]+/i)
-                    .failure( newText('errorcode', "<br>Bitte gib den Code ein.").color("red") .center().print() )
+                    .failure( newText('errorcode', "<br>Bitte den Code eingeben.").color("red") .center().print() )
             )
 ,
     newText("Leerzeile"," <br></p>")
@@ -129,7 +129,7 @@ newHtml("Anleitung","anleitung.html")
     .center()
     .print()
 ,
-newImage("Erklärbild","Erklärbild.png")
+newImage("Erklärbild","Erklärbild2.png")
     .size(800,370)
     .print()
 ,
@@ -176,7 +176,7 @@ Template(
     row => newTrial( "Trial" ,
         defaultImage.css("margin","1em")
         ,
-        newImage("Header","BHeader.png")
+        newImage("Header","Zeitungsheader.png")
         .settings.css("width, 50%")
         .center().print()
 
@@ -539,6 +539,27 @@ newText("Leerzeile"," <br></p>")
         .print()
 ,
     getTextInput("Dialekt")
+        .log("final")
+,
+newText("Leerzeile"," <br></p>")
+                 .center()
+                .print()
+                 ,
+newText("Email","<b>Dürften wir dich in Zukunft erneut kontaktieren?</b><br>Wenn ja, bitte Emailadresse angeben.<br>Die Angabe der Kontaktdaten ist freiwillig. Um Anonymität zu gewährleisten, wird diese Angabe getrennt vom ausgefüllten Fragebogen archiviert.")
+//        .center()
+        .print()
+,
+    newCanvas("Email", 1, 10)
+ //       .center()
+        .print()
+,
+
+    newTextInput("Email")
+ //       .center()
+        .size(600,80)
+        .print()
+,
+    getTextInput("Email")
         .log("final")
 ,
 newText("Leerzeile"," <br></p>")
