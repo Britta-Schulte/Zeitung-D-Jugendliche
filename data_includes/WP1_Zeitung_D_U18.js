@@ -366,33 +366,28 @@ newTrial("Meta1",
                ,
 
               //Leiter
-                newText("Leiter","<b>Die untenstehende Leiter</b> repr&auml;sentiert den relativen Sozialstatus der Menschen in Deutschland. "
-                       +"An der Spitze der Leiter stehen Menschen mit relativ hohem Status – diejenigen, die das meiste Geld, die beste Bildung und die angesehensten Arbeitspl&auml;tze haben. Ganz unten sind Menschen mit relativ niedrigem Status – beispielsweise als arbeitslos Gemeldete. Relativ weit unten zu verorten w&auml;ren auch diejenigen, die nur wenig Geld verdienen, einen niedrigen Bildungstand haben, und / oder Berufe aus&uuml;ben, die die Gesellschaft als eher wenig respektabel ansieht."
-                       +"<br> Wo w&uuml;rdest du dich auf dieser Leiter einordnen? W&auml;hle bitte die Sprosse, die deinem empfundenen Sozialstatus am ehesten entspricht.")
-               .settings.css("font-size", "18px")
-               .settings.css("text-align","justify")
-               ,
-               newDropDown("leiter", "Bitte eine Option ausw&auml;hlen")
-               .settings.add("A", "B", "C","D", "E", "F","G", "H", "I","J")
-               .log()
-               ,
-               newImage("leiter", "Leiter.jpeg")
-               .settings.size(200,300)
-               ,
-               newCanvas("leitercanvas", 1000,20)
-               .settings.add(0, 10, getText("Leiter"))
+             //   newText("Leiter","<b>Die untenstehende Leiter</b> repr&auml;sentiert den relativen Sozialstatus der Menschen in Deutschland. "
+             //          +"An der Spitze der Leiter stehen Menschen mit relativ hohem Status – diejenigen, die das meiste Geld, die beste Bildung und die angesehensten Arbeitspl&auml;tze haben. Ganz unten sind Menschen mit relativ niedrigem Status – beispielsweise als arbeitslos Gemeldete. Relativ weit unten zu verorten w&auml;ren auch diejenigen, die nur wenig Geld verdienen, einen niedrigen Bildungstand haben, und / oder Berufe aus&uuml;ben, die die Gesellschaft als eher wenig respektabel ansieht."
+             //          +"<br> Wo w&uuml;rdest du dich auf dieser Leiter einordnen? W&auml;hle bitte die Sprosse, die deinem empfundenen Sozialstatus am ehesten entspricht.")
+             //  .settings.css("font-size", "18px")
+             //  .settings.css("text-align","justify")
+             //  ,
+            //   newDropDown("leiter", "Bitte eine Option ausw&auml;hlen")
+             //  .settings.add("A", "B", "C","D", "E", "F","G", "H", "I","J")
+             //  .log()
+              // ,
+             //////  ,
+              // newCanvas("leitercanvas", 1000,20)
+            //   .settings.add(0, 10, getText("Leiter"))
                //.settings.center()
-               .print()
-               ,
-               newCanvas("leitercanvas2", 1000,350)
-               .settings.add(250,200, getImage("leiter"))
-               .settings.add(400,300, getDropDown("leiter"))
-               //.settings.center()
-               .print()
-               ,
-              newCanvas("filler2", 40, 150)
-               .print()
-               ,
+             //  .print()
+              // ,
+              // newCanvas("leitercanvas2", 1000,350)
+              // .settings.add(250,200, getImage("leiter"))
+             //  .settings.add(400,300, getDropDown("leiter"))
+              // //.settings.center()
+             //  .print()
+             ////////  ,
     newButton("continue", "Weiter")
                .settings.css("font-family", "calibri").settings.css("font-size", "12px")
                //.settings.center()
