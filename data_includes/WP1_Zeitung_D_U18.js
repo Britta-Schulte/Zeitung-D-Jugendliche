@@ -247,7 +247,7 @@ newTrial("Meta1",
                ,
                //Alter
                newDropDown("age", "Bitte eine Option ausw&auml;hlen")
-               .settings.add("12" , "13" , "14", "15" , "16 , "17", "18" ,"anderes")
+               .settings.add("12" , "13" , "14", "15" , "16" , "17", "18", "anderes")
                .log()
 
                ,
