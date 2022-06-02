@@ -463,7 +463,7 @@ newImage("HU","HU Logo.png")
         .print()
     ,
 
-       newText("SprachenMutter","<b>Welche Sprachen spricht/sprach deine Mutter?</b><br>Bitte sortieren und mit der am besten gesprochenen Sprache beginnen.")
+       newText("SprachenMutter","<b>Welche Sprachen spricht/sprach deine Mutter im Alltag?</b><br>Bitte sortieren und mit der am besten gesprochenen Sprache beginnen.")
  //       .center()
         .print()
 ,
@@ -483,7 +483,7 @@ newText("Leerzeile"," <br></p>")
     .center()
     .print()
 ,
-    newText("SprachenVater","<b>Welche Sprachen spricht/sprach dein Vater?</b><br> Bitte sortieren und mit der am besten gesprochenen Sprache beginnen.")
+    newText("SprachenVater","<b>Welche Sprachen spricht/sprach dein Vater im Alltag?</b><br> Bitte sortieren und mit der am besten gesprochenen Sprache beginnen.")
   //      .center()
         .print()
 ,
